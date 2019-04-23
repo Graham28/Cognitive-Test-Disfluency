@@ -1,0 +1,86 @@
+body {
+  background-color: #FFFFFF;
+  font-family:verdana;
+  text-align: center;
+}
+
+h1 {
+	text-align: center;
+	margin: 1.25em 1.75em 1.25em 0.75em;
+	padding: 0.2em 0.2em 0.2em 0.2em;
+}
+
+#questions h1 {
+	text-align: left;
+	margin-top: 2em;
+}
+
+#wait_clock {
+	margin: 2em 2em 2em 2em;
+	font-size: 6em;
+}
+
+.question {
+	margin: 1.25em 1.75em 1.25em 1.75em;
+	padding: 0.2em 0.2em 0.2em 0.2em;
+	font-size: 1.1em;
+}
+
+#questions {
+	text-align: left;
+	margin: 4em 6em 0.5em 16em;
+}
+
+#hummus {
+	margin: 5em 7.5em 5em 7.5em;
+	font-size: 1.5vw;
+}
+
+#intro {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+#start {
+	text-align: center;
+}
+
+#start-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#start-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#start-button:hover span {
+  padding-right: 25px;
+}
+
+#start-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#start-button {
+	display: inline-block;
+  	border-radius: 4px;
+  	background-color: #00cc00;
+  	border: none;
+  	color: #FFFFFF;
+  	text-align: center;
+  	font-size: 28px;
+  	padding: 20px;
+  	width: 200px;
+  	transition: all 0.5s;
+  	cursor: pointer;
+  	margin: 5px;
+}

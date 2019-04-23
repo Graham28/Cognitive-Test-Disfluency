@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Reading Test</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="http://www.mckeownresearch.xyz/hummus/hummus.css">
+  <link href='https://fonts.googleapis.com/css?family=Bonbon' rel='stylesheet'>
+  <script type="text/javascript" src="http://www.mckeownresearch.xyz/hummus/functions.js"></script>
+
+</head>
+
+<body onload="fontDecider()">
+  <h1>Hummus the troll</h1>
+  <p id="hummus">Hummus is a Troll that lives in Nice, France. He is 15 years old, which is quite old for a troll, as their life expectancy is 19 years. Trolls are small creatures who live in an almost perpetual state of happiness, singing, dancing and hugging most of the day. Hummus is the best singer in his village. His wife, Carrot, is the best dancer in the village. They have six children. 
+Altogether, there are 26,000 trolls in France. Male trolls are, on average, 3’2 tall, while female trolls are 2’9 tall. Trolls are nocturnal creatures that live in burrows. They are vegans, with their diets consisting of red rose petals, blue raspberries, oranges, and green apples. 
+</p>
+<p id="clock"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date();
+countDownDate.setMinutes(countDownDate.getMinutes() + 2);
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("clock").innerHTML = minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("clock").innerHTML = "EXPIRED";
+    window.location = 'http://www.mckeownresearch.xyz/hummus/wait.html';
+  }
+}, 1000);
+</script>
+<form id="start" action="http://www.mckeownresearch.xyz/hummus/wait.html">
+    <button id="start-button" style="vertical-align:middle"><span>Finish </span></button> 
+  </form>
+
+</body>
+</html>
