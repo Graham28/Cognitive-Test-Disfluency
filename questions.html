@@ -3,75 +3,112 @@
   <meta charset="utf-8">
 
   <title>Questions</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+  <meta name="description" content="Memorisation Study">
+  <meta name="author" content="McKeown Research">
 
-  <link rel="stylesheet" href="http://www.mckeownresearch.xyz/hummus/hummus.css">
+  <link rel="stylesheet" href="/study-1/hummus.css">
 
 </head>
 
-<body>
+<body id="questions">
   <h1>Questions</h1>
-
-  <form id ="questions" action="http://www.mckeownresearch.xyz/hummus/thank_you.html">
-    <div class="question">
-      What age is Hummus?<br><br>
-      <input type="radio" name="age" value="13" checked> 13<br>
-      <input type="radio" name="age" value="14"> 14<br>
-      <input type="radio" name="age" value="15"> 15<br>
-      <input type="radio" name="age" value="16"> 16
-    </div>
+  <!-- Asks user questions based on previous text-->
+  <form action="/study-1/guess.php" method="post">
+    
+    <!-- Question 1 -->
     <div class="question">
       How many Trolls live in France?<br><br>
       <input type="radio" name="population" value="26" checked> 26,000<br>
       <input type="radio" name="population" value="28"> 28,000<br>
       <input type="radio" name="population" value="30"> 30,000<br>
       <input type="radio" name="population" value="42"> 42,000
-    </div>
+    </div><br>
+    
+    <!-- Question 2 -->
     <div class="question">
-      How tall are male trolls?<br><br>
-      <input type="radio" name="height" value="2'2" checked> 2'2<br>
-      <input type="radio" name="height" value="2'9"> 2'9<br>
-      <input type="radio" name="height" value="3'2"> 3'2<br>
-      <input type="radio" name="height" value="3'9"> 3'9    
-    </div>
-    <div class="question">
-      What does a trolls diet consist of?<br><br>
+      What does a Troll's diet consist of?<br><br>
       <input type="radio" name="diet" value="a" checked> Cockroaches, worms, twigs, and thorns.<br>
       <input type="radio" name="diet" value="b"> Dandelion petals, strawberries, peaches, and green apples.<br>
       <input type="radio" name="diet" value="c"> Red rose petals, blue raspberries, oranges, and green apples.<br>
       <input type="radio" name="diet" value="d"> White rose petals, black raspberries, oranges, and red apples.   
-    </div>
+    </div><br>
+    
+    <!-- Question 3 -->
     <div class="question">
-      Trolls live in _____?<br><br>
+    Trolls live in _____?<br><br>
       <input type="radio" name="house" value="trees" checked> Trees<br>
       <input type="radio" name="house" value="huts"> Huts<br>
       <input type="radio" name="house" value="damns"> Damns<br>
       <input type="radio" name="house" value="burrows"> Burrows   
-    </div>
+    </div><br>
+    
+    <!-- Question 4 -->
     <div class="question">
-        Hummus is the best _______ in his village.<br><br>
-        <input type="text" name="best" value=""><br>
-    </div>
+      Hummus is the best _____ in this village.<br><br>
+      <input type="radio" name="best" value="singer" checked> Singer<br>
+      <input type="radio" name="best" value="dancer"> Dancer<br>
+      <input type="radio" name="best" value="golfer"> Golfer<br>
+      <input type="radio" name="best" value="hugger"> Hugger    
+    </div><br>
+    
+    <!-- Question 5 -->
+    <div class="question">
+      What type of flower do male trolls woo female trolls with?<br><br>
+      <input type="radio" name="woo" value="rose" checked> Rose<br>
+      <input type="radio" name="woo" value="violet"> Violets<br>
+      <input type="radio" name="woo" value="daffodil"> Daffodils<br>
+      <input type="radio" name="woo" value="tulip"> tulips    
+    </div><br>
+    
+    <!-- Question 6 -->
+    <div class="question">
+    Hummus is the sole _____ in his village.<br><br>
+      <input type="radio" name="job" value="carpenter" checked> Carpenter<br>
+      <input type="radio" name="job" value="farmer"> Farmer<br>
+      <input type="radio" name="job" value="digger"> Digger<br>
+      <input type="radio" name="job" value="accountant"> Accountant    
+    </div><br>
+    
+    <!-- Question 7 -->
     <div class ="question">
-        What city does Hummus live in?<br><br>
-        <input type="text" name="city" value=""><br>
-    </div>
+        What age is Hummus?<br><br>
+        <input type="text" name="age" value=""><br>
+    </div><br>
+    
+    <!-- Question 8 -->
+    <div class ="question">
+       How tall are male trolls?<br><br>
+        <input type="text" name="male_height" value=""><br>
+    </div><br>
+    
+    <!-- Question 9 -->
+    <div class="question">
+        What is the name of Hummus' village?<br><br>
+        <input type="text" name="village" value=""><br>
+    </div><br>
+    
+    <!-- Question 10 -->
     <div class="question">
         What is Hummus’ wife’s name?<br><br>
         <input type="text" name="wife" value=""><br>
-    </div>
+    </div><br>
+    
+    <!-- Question 11 -->
     <div class="question">
         How many kids does Hummus have?<br><br>
         <input type="text" name="kids" value=""><br>
-    </div>
+    </div><br>
+    
+    <!-- Question 12 -->
     <div class="question">
         What is the life expectancy of a troll?<br><br>
         <input type="text" name="life" value=""><br>
-    </div>
+    </div><br>
+    
+    <!-- Submit -->
     <div class="question">
       <input type="submit" value="Submit">
-    </div>
+    </div><br>
 </form>
 </body>
 </html>
